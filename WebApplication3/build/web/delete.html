@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgb(209, 210, 209);
+            margin: 0;
+        }
+        form {
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 3px 6px 8px rgb(187, 185, 185);
+        }
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #dbcaca;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(187, 185, 185, 0.5);
+            width: 80%;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: rgb(57, 146, 110);
+            color: rgb(25, 24, 24);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(182, 7, 7, 0.3);
+        }
+        button:hover {
+            background-color: rgb(66, 139, 73);
+        }
+    </style>
+</head>
+<body>
+    <form name="f" method="post" action="NewServlet4"> 
+        <h2>Delete Account</h2>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Your email" required><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" placeholder="Your password" required><br>
+        <button type="submit">Delete</button>
+    </form>
+</body>
+</html>
